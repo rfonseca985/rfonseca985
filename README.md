@@ -14,9 +14,6 @@
 <img align="center" alt="html5" src=https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white/>
 <img align="center" alt="html5" src=https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white/>
 <img align="center" alt="html5" src=https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white/>
-<img align="center" alt="html5" src=https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white/>
-<img align="center" alt="html5" src=https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white/>
-
 </div><br/>
 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=rfonseca985)](https://github.com/anuraghazra/github-readme-stats)
