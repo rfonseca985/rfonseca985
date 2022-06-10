@@ -16,9 +16,7 @@
 <img align="center" alt="html5" src=https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white/>
 
 <br/>
-  
 <img align="center" alt="html5" src=https://img.shields.io/badge/Eclipse-2C2255?style=for-the-badge&logo=eclipse&logoColor=white/>
-
 <br/>
 
 </div><br/>
