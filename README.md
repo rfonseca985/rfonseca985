@@ -24,4 +24,4 @@
 
 [![Follows](https://img.shields.io/github/followers/{rfonseca985}.svg?style=social&label=Follow&maxAge=2592000)]()
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=rfonseca985&theme=blue-green)](https://github.com/anuraghazra/github-readme-stats)]
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=rfonseca985&theme=blue-green)](https://github.com/anuraghazra/github-readme-stats)
