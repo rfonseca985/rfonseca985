@@ -16,9 +16,12 @@
 <img align="center" alt="html5" src=https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white/>
 
 <br/>
-<img align="center" alt="html5" src=https://img.shields.io/github/followers/{rfonseca985}.svg?style=social&label=Follow&maxAge=2592000/>
+<img align="center" alt="html5" src=https://img.shields.io/badge/Eclipse-2C2255?style=for-the-badge&logo=eclipse&logoColor=white/>
 
+<br/>
 
 </div><br/>
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=rfonseca985)](https://github.com/anuraghazra/github-readme-stats)
+[![Follows](https://img.shields.io/github/followers/{rfonseca985}.svg?style=social&label=Follow&maxAge=2592000)]()
+
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=rfonseca985&theme=blue-green)](https://github.com/anuraghazra/github-readme-stats)]
