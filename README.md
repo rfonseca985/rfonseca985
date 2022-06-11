@@ -25,10 +25,9 @@
 <img align="center" alt="html5" src=https://img.shields.io/badge/Eclipse-2C2255?style=for-the-badge&logo=eclipse&logoColor=white/>
 
 <br/>
- 
-![Snake animation](https://github.com/rfonseca985/rfonseca985/blob/output/github-contribution-grid-snake.svg)
 
 </div><br/>
 
+![Snake animation](https://github.com/rfonseca985/rfonseca985/blob/output/github-contribution-grid-snake.svg)
 
 ![Follows](https://img.shields.io/github/followers/{rfonseca985}.svg?style=social&label=Follow&maxAge=2592000)
