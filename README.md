@@ -32,4 +32,6 @@
 
 ![snake gif](https://github.com/rfonseca985/rfonseca985/blob/output/github-contribution-grid-snake.svg)
 
-![Follows](https://img.shields.io/github/followers/:user?label=Follow)
+![Follows](https://img.shields.io/github/followers/rfonseca985?label=Follow)
+
+![Follows](https://img.shields.io/github/watchers/rfonseca985/rfonseca985?label=Watch)
