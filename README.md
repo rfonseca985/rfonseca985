@@ -1,4 +1,4 @@
-### Olá Eu sou o Rafael Fonseca 💾</>:
+### Olá eu sou o Rafael Fonseca 💾</>:
 
 [![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=flat-square&logo=twitter&logoColor=white)](https://twitter.com/rfonseca85)
 [![Github Badge](https://img.shields.io/badge/-Github-000?style=flat-square&logo=Github&logoColor=white&link=https://github.com/rfonseca985)](https://github.com/rfonseca985)
@@ -32,4 +32,4 @@
 
 ![snake gif](https://github.com/rfonseca985/rfonseca985/blob/output/github-contribution-grid-snake.svg)
 
-![Follows](https://img.shields.io/github/followers/{}.svg?style=social&label=Follow&maxAge=2592000)
+![Follows](https://img.shields.io/github/github/followers/:rfonseca985?label=Follow
