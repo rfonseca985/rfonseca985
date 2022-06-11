@@ -10,7 +10,7 @@
 
 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=rfonseca985&theme=dark)](https://github.com/anuraghazra/github-readme-stats)
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=rfonseca985&show_icons=true&theme=dark)
+
 
 ## Tecnologias que uso no meu dia 🖥️:
 <div style="display: inline_block"><br/>
