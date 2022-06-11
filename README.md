@@ -1,11 +1,11 @@
-### Olá sou o Rafael Fonseca 💾</>:
+### Olá sou Rafael Fonseca 💾</>:
 
 
-[![Github Badge](https://img.shields.io/badge/-Github-000?style=flat-square&logo=Github&logoColor=white&link=https://github.com/rfonseca985)](https://github.com/rfonseca985)
 [![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=flat-square&logo=twitter&logoColor=white)](https://twitter.com/rfonseca85)
 [![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/rfonseca-3a001b180/)](https://www.linkedin.com/in/rfonseca-3a001b180)
 [![Gmail Badge](https://img.shields.io/badge/-Gmail-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:rfonseca985@gmail.com)](mailto:rfonseca985@gmail.com/)
-<br/>
+
+[![Github Badge](https://img.shields.io/badge/-Github-000?style=flat-square&logo=Github&logoColor=white&link=https://github.com/rfonseca985)](https://github.com/rfonseca985)
 ![Follows](https://img.shields.io/github/followers/rfonseca985?label=Follow)
 
 
