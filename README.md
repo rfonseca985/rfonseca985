@@ -1,6 +1,6 @@
 
 <h1 align="left">Hi , I'm Rafael Fonseca</h1>
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=rfonseca985&color=yellow" alt="Profile views" /> </p>
+<p align="left"> <img src="https://komarev.com/ghpvc/?username=rfonseca985&color=" alt="Profile views" /> </p>
 
 - 🔥  Developer back end java JR 
 
@@ -11,7 +11,7 @@
 [![Gmail Badge](https://img.shields.io/badge/-Gmail-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:rfonseca985@gmail.com)](mailto:rfonseca985@gmail.com)
 
 [![Github Badge](https://img.shields.io/badge/-Github-000?style=flat-square&logo=Github&logoColor=white&link=https://github.com/rfonseca985)](https://github.com/rfonseca985)
-![Follows](https://img.shields.io/github/followers/rfonseca985?label=Follow)
+
 
 ## 🛠 &nbsp;Tech Stack
 <div style="display: inline_block"><br/>
@@ -37,6 +37,8 @@
 <
 <img width="530em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=rfonseca985&layout=compact&theme=vision-friendly-dark" alt="rfonseca985 most languages"/>
 </p>
+
+![Follows](https://img.shields.io/github/followers/rfonseca985?label=Followers)
 
 
 
