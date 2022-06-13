@@ -1,16 +1,15 @@
 
 <h1 align="left">Hi , I'm Rafael Fonseca</h1>
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=rfonseca985&color=" alt="Profile views" /> </p>
+<p align="left"> <img src="https://komarev.com/ghpvc/?username=rfonseca985&color=red" alt="Profile views" /> </p>
 
 - 🔥  Developer back end java JR 
 
 <br><br>
 ## 👨🏽‍🦲 &nbsp;Social Links
-[![Twitter Badge](https://img.shields.io/badge/Twitter-1DA1F2?style=flat-square&logo=twitter&logoColor=white)](https://twitter.com/rfonseca85)
 [![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/rfonseca-3a001b180/)](https://www.linkedin.com/in/rfonseca-3a001b180/)
 [![Gmail Badge](https://img.shields.io/badge/-Gmail-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:rfonseca985@gmail.com)](mailto:rfonseca985@gmail.com)
-
 [![Github Badge](https://img.shields.io/badge/-Github-000?style=flat-square&logo=Github&logoColor=white&link=https://github.com/rfonseca985)](https://github.com/rfonseca985)
+[![Twitter Badge](https://img.shields.io/badge/Twitter-1DA1F2?style=flat-square&logo=twitter&logoColor=white)](https://twitter.com/rfonseca85)
 
 
 ## 🛠 &nbsp;Tech Stack
