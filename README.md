@@ -1,6 +1,6 @@
 
 <h1 align="left">Hi , I'm Rafael Fonseca</h1>
-<p align="left" href="https://github.com/rfonseca985"> <img src="https://komarev.com/ghpvc/?username=rfonseca985&color=red" alt="Profile views"/></p>
+<p align="left" >[![Profile Wiews Badge](https://komarev.com/ghpvc/?username=rfonseca985&color=red)](https://github.com/rfonseca985)</p>
 
 - 🔥  Developer FullStack JR Java | Angular 
 
