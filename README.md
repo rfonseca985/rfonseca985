@@ -24,7 +24,6 @@
 [![MongoDB Badge](https://img.shields.io/badge/MongoDB-4EA94B?style=flat-square&logo=mongodb&logoColor=white)](https://www.mongodb.com/pt-br)
 
 
-<br/>
 [![Eclipse Badge](https://img.shields.io/badge/Eclipse-2C2255?style=flat-square&logo=eclipse&logoColor=white)](https://www.eclipse.org/)
 [![IntelliJ Badge](https://img.shields.io/badge/Eclipse-2C2255?style=flat-square&logo=intellij&logoColor=white)](https://www.jetbrains.com/idea/)
 
