@@ -25,7 +25,7 @@
 
 
 [![Eclipse Badge](https://img.shields.io/badge/Eclipse-2C2255?style=flat-square&logo=eclipse&logoColor=white)](https://www.eclipse.org/)
-[![IntelliJ Badge](https://img.shields.io/badgeIntelliJ-000000?style=flat-square&logo=intellijidea&logoColor=white)](https://www.jetbrains.com/idea/)
+[![IntelliJ Badge](https://img.shields.io/badge/IntelliJ-000000?style=flat-square&logo=intellijidea&logoColor=white)](https://www.jetbrains.com/idea/)
 
 
 
