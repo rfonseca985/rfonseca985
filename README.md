@@ -37,7 +37,7 @@
 <br>
 <div align="center" display="inline-block">
   <a href="https://github.com/rfonseca985">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/??username=rfonseca985&layout=compact&langs_count=7&theme=reactalt="rfonseca985 most languages" />
+  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/??username=rfonseca985&layout=compact&theme=reactalt-dark="rfonseca985 most languages" />
 </div>
 <!--<br>
 <img width="530em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=rfonseca985&layout=compact&theme=vision-friendly-dark" alt="rfonseca985 most languages"/>-->
