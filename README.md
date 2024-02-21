@@ -18,7 +18,7 @@
 [![Angular Badge](https://img.shields.io/badge/Angular-DD0031?style=flat-square&logo=angular&logoColor=white)](https://angular.io/)
 [![Spring Badge](https://img.shields.io/badge/Spring-6DB33F?style=flat-square&logo=spring&logoColor=white)](https://spring.io/)
 [![PostgreSQL Badge](https://img.shields.io/badge/PostgreSQL-316192?style=flat-square&logo=postgresql&logoColor=white)](https://www.postgresql.org/)
-[![Github Badge](https://img.shields.io/badge/Github-181717?style=flat-square&logo=github&logoColor=white)](https://www.postgresql.org/)
+[![Github Badge](https://img.shields.io/badge/Github-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/)
 
 
 
