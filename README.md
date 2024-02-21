@@ -2,7 +2,7 @@
 <h1 align="left">Hi , I'm Rafael Fonseca</h1>
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=rfonseca985&color=red" alt="Profile views" /> </p>
 
-- 🔥  Developer Backend java JR 
+- 🔥  Developer FullStack JR Java | Angular 
 
 <br><br>
 ## 👨🏽‍🦲 &nbsp;Social Links
