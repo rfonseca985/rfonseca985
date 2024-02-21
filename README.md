@@ -31,16 +31,12 @@
 
 ## ⚙️ &nbsp;GitHub Analytics
 
-![snake gif](https://github.com/rfonseca985/rfonseca985/blob/output/github-contribution-grid-snake.svg)
-<p align="left">
+<!-- ![snake gif](https://github.com/rfonseca985/rfonseca985/blob/output/github-contribution-grid-snake.svg)
+<p align="left"> -->
+
 
 <br>
-<div align="center" display="inline-block">
-  <a href="https://github.com/rfonseca985">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/??username=rfonseca985&layout=compact&theme=reactalt-dark="rfonseca985 most languages" />
-</div>
-<!--<br>
-<img width="530em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=rfonseca985&layout=compact&theme=vision-friendly-dark" alt="rfonseca985 most languages"/>-->
+<img width="530em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=rfonseca985&layout=compact&theme=vision-friendly-dark" alt="rfonseca985 most languages"/>
 </p>
 
 ![Follows](https://img.shields.io/github/followers/rfonseca985?label=Followers)
