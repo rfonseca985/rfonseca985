@@ -1,7 +1,7 @@
 
 <h1 align="left">Hi , I'm Rafael Fonseca</h1>
 
-[![ProfileViewers Badge](https://komarev.com/ghpvc/?username=rfonseca985&color=red)](https://github.com/rfonseca985)
+[![ProfileViews Badge](https://komarev.com/ghpvc/?username=rfonseca985&color=red)](https://github.com/rfonseca985)
 
 - 🔥  Developer FullStack JR Java | Angular 
 
