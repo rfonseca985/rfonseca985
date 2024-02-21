@@ -13,6 +13,9 @@
 
 
 ## 🛠 &nbsp;Tech Stack
+
+[![Java Badge](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=java&logoColor=white)](https://www.java.com/pt-BR/)
+
 <div style="display: inline_block"><br/>
 <img align="center" alt="html5" src= "https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=java&logoColor=white"/>
 <img align="center" alt="html5" src="https://img.shields.io/badge/Python-14354C?style=flat-square&logo=python&logoColor=white"/>
