@@ -33,8 +33,8 @@
 
 ## ⚙️ &nbsp;GitHub Analytics
 
-![snake gif](https://github.com/rfonseca985/rfonseca985/blob/output/github-contribution-grid-snake.svg)
-<p align="left">
+<!-- ![snake gif](https://github.com/rfonseca985/rfonseca985/blob/output/github-contribution-grid-snake.svg)
+<p align="left"> -->
 
 
 <br>
