@@ -5,7 +5,7 @@
 
 - 🔥  Developer FullStack JR Java | Angular
 
-##Sobre Mim
+<h2>Sobre Mim</h2>
 
 Olá! Me chamo Rafael Fonseca, tenho 38 anos e sou um homem cis. Sou formado em Análise e Desenvolvimento de Sistemas e atualmente estou cursando pós-graduação em Desenvolvimento de Sistemas em Java. Minhas stacks incluem Java, Spring, com noções sólidas de HTML, CSS e JavaScript, e estou iniciando meus estudos em Angular.
 
