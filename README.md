@@ -7,21 +7,21 @@
 
 <h2>Sobre Mim</h2>
 
-Olá! Me chamo Rafael Fonseca, tenho 38 anos e sou um homem cis. Sou formado em Análise e Desenvolvimento de Sistemas e atualmente estou cursando pós-graduação em Desenvolvimento de Sistemas em Java. Minhas stacks incluem Java, Spring, com noções sólidas de HTML, CSS e JavaScript, e estou iniciando meus estudos em Angular.
+Olá! Me chamo Rafael Fonseca, tenho 38 anos e sou um homem cis. Sou formado em Análise e Desenvolvimento de Sistemas e atualmente estou cursando pós-graduação em Desenvolvimento de Sistemas em Java. 
 
-Formação
+<h3Formação</h3>
 Iniciei minha jornada acadêmica com a graduação em Análise e Desenvolvimento de Sistemas, uma escolha que reflete minha paixão pela área de tecnologia.
 
-Especializações em Java
+<h3>Especializações em Java</h3>
 Atualmente, estou aprimorando meus conhecimentos na área de desenvolvimento de sistemas com ênfase em Java. A pós-graduação que estou cursando amplia minha expertise nessa tecnologia, permitindo-me explorar ainda mais as possibilidades que o Java oferece.
 
-Stacks e Tecnologias
+<h3>Stacks e Tecnologias</h3>
 Minhas stacks principais incluem Java e Spring, evidenciando minha preferência pelo desenvolvimento backend. Possuo sólidos conhecimentos em HTML, CSS e JavaScript, elementos essenciais para o desenvolvimento web. Além disso, estou iniciando meus estudos em Angular, uma tecnologia que promete agregar ainda mais às minhas habilidades.
 
-Paixão pelo Backend e Entusiasmo Geral pela Tecnologia
+<h3>Paixão pelo Backend e Entusiasmo Geral pela Tecnologia</h3>
 Apesar de minha paixão pelo backend, sou um entusiasta da tecnologia como um todo. Acredito na importância de abraçar as diferentes facetas do desenvolvimento de software para construir soluções robustas e inovadoras.
 
-Considerações Finais
+<h3>Considerações Finais</h3>
 Estou entusiasmado com minha jornada na área de tecnologia e continuo em busca de aprendizado constante. Acredito que a tecnologia é um campo vasto e dinâmico, e estou comprometido em explorar novas possibilidades, expandir minhas habilidades e contribuir para o avanço do setor.
 
 Espero que tenham gostado de conhecer um pouco mais sobre mim e minha trajetória na área de tecnologia. Estou ansioso para os desafios e conquistas que o futuro reserva.
