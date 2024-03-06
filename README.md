@@ -50,6 +50,10 @@ Espero que tenham gostado de conhecer um pouco mais sobre mim e minha trajetóri
 
 
 [<img src="https://hermes.dio.me/tracks/da6041a9-80ef-409e-bd50-5e7be4dfadf6.png" height="50"></a>](https://web.dio.me/track/formacao-java-developer)
+[<img src="https://hermes.dio.me/tracks/5a199bba-a494-49ce-b357-f746eb7b7425.png" height="50"></a>](https://web.dio.me/track/formacao-angular-developer)
+[<img src="https://hermes.dio.me/tracks/aa71615b-e701-4cec-bb64-71ba6974c5fe.png" height="50"></a>](https://web.dio.me/track/formacao-python-developer)
+[<img src="https://hermes.dio.me/tracks/91b94770-d89f-46fa-83b4-832db9996cbd.png" height="50"></a>](https://web.dio.me/track/formacao-programacao-reativa-com-spring-webflux)
+[<img src="https://hermes.dio.me/tracks/02ee8de6-37e2-4be7-872d-0d7d94910cae.png" height="50"></a>](https://web.dio.me/track/8f3056da-5877-40e1-bd15-de9ae4d9885d)
 <br/>
 
 ## ⚙️ &nbsp;GitHub Analytics
