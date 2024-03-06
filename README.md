@@ -48,7 +48,7 @@ Espero que tenham gostado de conhecer um pouco mais sobre mim e minha trajetóri
 [![Eclipse Badge](https://img.shields.io/badge/Eclipse-2C2255?style=flat-square&logo=eclipse&logoColor=white)](https://www.eclipse.org/)
 [![IntelliJ Badge](https://img.shields.io/badge/IntelliJ-000000?style=flat-square&logo=intellijidea&logoColor=white)](https://www.jetbrains.com/idea/)
 
-
+## 🧑🏼‍🎓 &nbsp;Certificações
 [<img src="https://hermes.dio.me/tracks/da6041a9-80ef-409e-bd50-5e7be4dfadf6.png" height="50"></a>](https://web.dio.me/track/formacao-java-developer)
 [<img src="https://hermes.dio.me/tracks/5a199bba-a494-49ce-b357-f746eb7b7425.png" height="50"></a>](https://web.dio.me/track/formacao-angular-developer)
 [<img src="https://hermes.dio.me/tracks/aa71615b-e701-4cec-bb64-71ba6974c5fe.png" height="50"></a>](https://web.dio.me/track/formacao-python-developer)
