@@ -49,7 +49,7 @@ Espero que tenham gostado de conhecer um pouco mais sobre mim e minha trajetóri
 [![IntelliJ Badge](https://img.shields.io/badge/IntelliJ-000000?style=flat-square&logo=intellijidea&logoColor=white)](https://www.jetbrains.com/idea/)
 
 
-[<img src="Formação Java Developer" height="50"></a>](https://hermes.dio.me/tracks/da6041a9-80ef-409e-bd50-5e7be4dfadf6.png)
+[<img src="https://hermes.dio.me/tracks/da6041a9-80ef-409e-bd50-5e7be4dfadf6.png" height="50"></a>](https://web.dio.me/track/formacao-java-developer)
 <br/>
 
 ## ⚙️ &nbsp;GitHub Analytics
