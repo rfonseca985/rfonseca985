@@ -7,13 +7,13 @@
 
 <h2>Sobre Mim</h2>
 
-Olá! Me chamo Rafael Fonseca, tenho 38 anos e sou um homem cis. Sou formado em Análise e Desenvolvimento de Sistemas e atualmente estou cursando pós-graduação em Desenvolvimento de Sistemas em Java. 
+Olá! Me chamo Rafael Fonseca, tenho 38 anos e sou um homem cis. Sou formado em Análise e Desenvolvimento de Sistemas e pós-graduado em Desenvolvimento de Sistemas em Java. 
 
 <h3>Formação</h3>
 Iniciei minha jornada acadêmica com a graduação em Análise e Desenvolvimento de Sistemas, uma escolha que reflete minha paixão pela área de tecnologia.
 
 <h3>Especializações em Java</h3>
-Atualmente, estou aprimorando meus conhecimentos na área de desenvolvimento de sistemas com ênfase em Java. A pós-graduação que estou cursando amplia minha expertise nessa tecnologia, permitindo-me explorar ainda mais as possibilidades que o Java oferece.
+Atualmente, estou aprimorando meus conhecimentos na área de desenvolvimento de sistemas com ênfase em Java. A pós-graduação amplia minha expertise nessa tecnologia, permitindo-me explorar ainda mais as possibilidades que o Java oferece.
 
 <h3>Stacks e Tecnologias</h3>
 Minhas stacks principais incluem Java e Spring, evidenciando minha preferência pelo desenvolvimento backend. Possuo sólidos conhecimentos em HTML, CSS e JavaScript, elementos essenciais para o desenvolvimento web. Além disso, estou iniciando meus estudos em Angular, uma tecnologia que promete agregar ainda mais às minhas habilidades.
