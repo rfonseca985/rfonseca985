@@ -56,7 +56,7 @@ Espero que tenham gostado de conhecer um pouco mais sobre mim e minha trajetóri
 [<img src="https://hermes.dio.me/tracks/02ee8de6-37e2-4be7-872d-0d7d94910cae.png" height="50"></a>](https://web.dio.me/track/8f3056da-5877-40e1-bd15-de9ae4d9885d)
 <br/>
 
-## ⚙️ &nbsp;GitHub Analytics
+<--## ⚙️ &nbsp;GitHub Analytics
 
 <!-- ![snake gif](https://github.com/rfonseca985/rfonseca985/blob/output/github-contribution-grid-snake.svg)
 <p align="left"> -->
@@ -64,7 +64,7 @@ Espero que tenham gostado de conhecer um pouco mais sobre mim e minha trajetóri
 
 <br>
 <img width="530em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=rfonseca985&layout=compact&theme=vision-friendly-dark" alt="rfonseca985 most languages"/>
-</p>
+</p>-->
 
 ![Follows](https://img.shields.io/github/followers/rfonseca985?label=Followers)
 
