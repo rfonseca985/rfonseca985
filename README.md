@@ -31,4 +31,4 @@ Sou um profissional híbrido que une a visão estratégica de liderança técnic
 ### 📫 Vamos conversar?
 
 * 🌍 **Meu Portfólio:** [rfonseca985.github.io/page-portifolio/](https://rfonseca985.github.io/page-portifolio/)
-* 💼 **LinkedIn:** [https://www.linkedin.com/in/rfonseca985/]
+* 💼 **LinkedIn:** [[clique aqui](https://www.linkedin.com/in/rfonseca985/)]
