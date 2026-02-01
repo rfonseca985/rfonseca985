@@ -28,15 +28,7 @@ Sou um profissional híbrido que une a visão estratégica de liderança técnic
 
 ---
 
-### 📊 Estatísticas do GitHub
-<p align="left">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=rfonseca985&show_icons=true&theme=dark&include_all_commits=true&count_private=true" />
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=rfonseca985&layout=compact&langs_count=7&theme=dark" />
-</p>
-
----
-
 ### 📫 Vamos conversar?
 
 * 🌍 **Meu Portfólio:** [rfonseca985.github.io/page-portifolio/](https://rfonseca985.github.io/page-portifolio/)
-* 💼 **LinkedIn:** [Seu Link Aqui]
+* 💼 **LinkedIn:** [(https://www.linkedin.com/in/rfonseca985/)]
