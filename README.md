@@ -1,47 +1,34 @@
-
 # Olá, eu sou o Rafael Fonseca 👋
 
-### Full Stack Developer & Administrador de Redes
+### CTO na RF Soluções Tecnológicas | Administrador de Redes na Bristol Parts
 
-Atualmente, atuo como **Administrador de Redes** na **[Bristol Parts]**, onde gerencio infraestrutura e conectividade. Combinando essa base técnica com minha formação em **Análise e Desenvolvimento de Sistemas** e pós-graduação em **Java**, foco em criar soluções que são não apenas funcionais no código, mas também otimizadas para o ambiente de rede e servidores.
+Sou um profissional híbrido que une a visão estratégica de liderança técnica com a sólida execução em infraestrutura e desenvolvimento. Como **CTO na RF Soluções Tecnológicas**, foco em inovação e soluções escaláveis. Na **Bristol Parts**, garanto a estabilidade e segurança da operação como **Administrador de Redes**.
 
 ---
 
-### 🛠️ Tecnologias & Especialidades
+### 🛠️ Expertise & Stack Técnica
 
-**Infraestrutura & Redes:**
-![Redes](https://img.shields.io/badge/Networking-Administração-blue?style=for-the-badge&logo=cisco)
+**Infraestrutura & Governança:**
+![Redes](https://img.shields.io/badge/Networking-Adm_Redes-blue?style=for-the-badge&logo=cisco)
 ![Linux](https://img.shields.io/badge/Linux-000?style=for-the-badge&logo=linux&logoColor=22ed18)
-![Segurança](https://img.shields.io/badge/Segurança_da_Informação-Shield-red?style=for-the-badge)
+![Segurança](https://img.shields.io/badge/Segurança-Informação-red?style=for-the-badge)
 
-**Desenvolvimento Backend:**
+**Desenvolvimento Full Stack:**
 ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
 ![Spring](https://img.shields.io/badge/spring-%236DB33F.svg?style=for-the-badge&logo=spring&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
-
-**Desenvolvimento Frontend:**
 ![Angular](https://img.shields.io/badge/angular-%23DD0031.svg?style=for-the-badge&logo=angular&logoColor=white)
-![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
 
 ---
 
-### 🎓 Formação & Certificações
+### 🎓 Formação e Aperfeiçoamento
 
-* **Pós-graduação:** Desenvolvimento de Sistemas com ênfase em Java.
-* **Graduação:** Análise e Desenvolvimento de Sistemas.
-* **Capacitação Técnica (IFRS):**
-    * Administração de Redes e Infraestrutura.
-    * Segurança da Informação e Suporte Técnico.
-    * Lógica e Desenvolvimento de Software.
+* **Pós-graduação em Desenvolvimento de Sistemas (Ênfase Java)** - Especialista.
+* **Graduação em Análise e Desenvolvimento de Sistemas**.
+* **Certificações IFRS:** Administração de Redes, Suporte Técnico e Segurança da Informação.
 
 
 
-### 📫 Contato & Portfólio
+### 📫 Vamos conversar?
 
-* 🌍 **Portfólio Online:** [Acesse aqui](https://rfonseca985.github.io/page-portifolio/)
-* 💼 **LinkedIn:** (https://www.linkedin.com/in/rfonseca985/)
-* 📍 **Localização:** Pouso Alegre/MG - Brasil 🇧🇷
-
-*"Unindo o código à infraestrutura para construir sistemas resilientes."*
-
-
+* 🌍 **Meu Portfólio:** [rfonseca985.github.io/page-portifolio/](https://rfonseca985.github.io/page-portifolio/)
+* 💼 **LinkedIn:** [(https://www.linkedin.com/in/rfonseca985/)]
