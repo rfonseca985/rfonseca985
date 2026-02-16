@@ -1,8 +1,8 @@
 # Olá, eu sou o Rafael Fonseca 👋
 
-### CTO na RF Soluções Tecnológicas | Administrador de Redes na Bristol Parts
+### CTO na RF Soluções Tecnológicas
 
-Sou um profissional híbrido que une a visão estratégica de liderança técnica com a sólida execução em infraestrutura e desenvolvimento. Como **CTO na RF Soluções Tecnológicas**, foco em inovação e soluções escaláveis. Na **Bristol Parts**, garanto a estabilidade e segurança da operação como **Administrador de Redes**.
+Sou um profissional híbrido que une a visão estratégica de liderança técnica com a sólida execução em infraestrutura e desenvolvimento. Como **CTO na RF Soluções Tecnológicas**, foco em inovação e soluções escaláveis.
 
 ---
 
