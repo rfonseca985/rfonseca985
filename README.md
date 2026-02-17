@@ -30,5 +30,5 @@ Sou um profissional híbrido que une a visão estratégica de liderança técnic
 
 ### 📫 Vamos conversar?
 
-* 🌍 **Meu Portfólio:** [clique aqui](https://build-my-portifolio.base44.app)]
+* 🌍 **Meu Portfólio:** [clique aqui](https://rf-portifolio.base44.app)]
 * 💼 **LinkedIn:** [[clique aqui](https://www.linkedin.com/in/rfonseca985/)]
