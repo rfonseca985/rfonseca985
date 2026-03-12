@@ -1,35 +1,28 @@
-import { redirect } from 'next/navigation'
+'use client'
+
+import { useState } from 'react'
+import { useRouter } from 'next/navigation'
 import Link from 'next/link'
-import { createClient } from '@/lib/supabase/server'
+import { createClient } from '@/lib/supabase/client'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
+import { Label } from '@/components/ui/label'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
-import { AlertCircle, Leaf } from 'lucide-react'
 import { Alert, AlertDescription } from '@/components/ui/alert'
+import { Leaf, Mail, Lock, AlertCircle } from 'lucide-react'
 
-export default async function LoginPage({
-  searchParams,
-}: {
-  searchParams: Promise<Record<string, string | string[] | undefined>>
-}) {
-  const supabase = await createClient()
-  const {
-    data: { user },
-  } = await supabase.auth.getUser()
+export default function LoginPage() {
+  const [email, setEmail] = useState('')
+  const [password, setPassword] = useState('')
+  const [error, setError] = useState<string | null>(null)
+  const [loading, setLoading] = useState(false)
+  const router = useRouter()
+  const supabase = createClient()
 
-  if (user) {
-    redirect('/dashboard')
-  }
-
-  const params = await searchParams
-  const error = params.error_description
-
-  async function handleLogin(formData: FormData) {
-    'use server'
-
-    const email = formData.get('email') as string
-    const password = formData.get('password') as string
-    const supabase = await createClient()
+  const handleLogin = async (e: React.FormEvent) => {
+    e.preventDefault()
+    setLoading(true)
+    setError(null)
 
     const { error } = await supabase.auth.signInWithPassword({
       email,
@@ -37,111 +30,104 @@ export default async function LoginPage({
     })
 
     if (error) {
-      return redirect(`/auth/login?error_description=${error.message}`)
+      setError(error.message)
+      setLoading(false)
+      return
     }
 
-    redirect('/dashboard')
+    router.push('/dashboard')
+    router.refresh()
   }
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-background via-slate-800 to-background p-4">
-      <div className="w-full max-w-md space-y-6">
-        {/* Header */}
-        <div className="text-center space-y-2">
-          <div className="flex items-center justify-center gap-2 mb-4">
-            <div className="w-10 h-10 rounded-lg bg-primary flex items-center justify-center">
-              <Leaf className="w-6 h-6 text-primary-foreground" />
-            </div>
-            <h1 className="text-2xl font-bold text-foreground">CannTrace Care</h1>
+    <div className="min-h-screen flex items-center justify-center bg-background p-4">
+      <div className="w-full max-w-md">
+        {/* Logo */}
+        <div className="flex items-center justify-center gap-3 mb-8">
+          <div className="flex items-center justify-center w-12 h-12 rounded-xl bg-primary/10 border border-primary/20">
+            <Leaf className="w-7 h-7 text-primary" />
           </div>
-          <p className="text-muted-foreground text-sm">
-            Plataforma de rastreabilidade e telemedicina para Cannabis Medicinal
-          </p>
+          <div>
+            <h1 className="text-2xl font-bold text-foreground">CannTrace Care</h1>
+            <p className="text-sm text-muted-foreground">Cannabis Medicinal</p>
+          </div>
         </div>
 
-        {/* Error Alert */}
-        {error && (
-          <Alert variant="destructive">
-            <AlertCircle className="h-4 w-4" />
-            <AlertDescription>{error}</AlertDescription>
-          </Alert>
-        )}
-
-        {/* Login Card */}
-        <Card className="border-border bg-card">
-          <CardHeader>
-            <CardTitle>Acesse sua conta</CardTitle>
+        <Card className="border-border/50 bg-card/50 backdrop-blur">
+          <CardHeader className="text-center">
+            <CardTitle className="text-xl">Bem-vindo de volta</CardTitle>
             <CardDescription>
-              Faça login para acessar o painel de controle
+              Entre com suas credenciais para acessar a plataforma
             </CardDescription>
           </CardHeader>
           <CardContent>
-            <form action={handleLogin} className="space-y-4">
+            <form onSubmit={handleLogin} className="space-y-4">
+              {error && (
+                <Alert variant="destructive" className="bg-destructive/10 border-destructive/20">
+                  <AlertCircle className="h-4 w-4" />
+                  <AlertDescription>{error}</AlertDescription>
+                </Alert>
+              )}
+
               <div className="space-y-2">
-                <label htmlFor="email" className="text-sm font-medium text-foreground">
-                  E-mail
-                </label>
-                <Input
-                  id="email"
-                  name="email"
-                  type="email"
-                  placeholder="seu@email.com"
-                  required
-                  className="bg-input border-border text-foreground"
-                />
+                <Label htmlFor="email">Email</Label>
+                <div className="relative">
+                  <Mail className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
+                  <Input
+                    id="email"
+                    type="email"
+                    placeholder="seu@email.com"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    className="pl-10 bg-background/50"
+                    required
+                  />
+                </div>
               </div>
 
               <div className="space-y-2">
-                <label htmlFor="password" className="text-sm font-medium text-foreground">
-                  Senha
-                </label>
-                <Input
-                  id="password"
-                  name="password"
-                  type="password"
-                  placeholder="••••••••"
-                  required
-                  className="bg-input border-border text-foreground"
-                />
+                <div className="flex items-center justify-between">
+                  <Label htmlFor="password">Senha</Label>
+                  <Link
+                    href="/auth/reset-password"
+                    className="text-sm text-primary hover:underline"
+                  >
+                    Esqueceu a senha?
+                  </Link>
+                </div>
+                <div className="relative">
+                  <Lock className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
+                  <Input
+                    id="password"
+                    type="password"
+                    placeholder="********"
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
+                    className="pl-10 bg-background/50"
+                    required
+                  />
+                </div>
               </div>
 
-              <Button
-                type="submit"
-                className="w-full bg-primary text-primary-foreground hover:bg-primary/90"
-              >
-                Entrar
+              <Button type="submit" className="w-full" disabled={loading}>
+                {loading ? 'Entrando...' : 'Entrar'}
               </Button>
             </form>
 
-            <div className="mt-6 pt-6 border-t border-border">
-              <p className="text-center text-sm text-muted-foreground">
-                Não tem uma conta?{' '}
-                <Link
-                  href="/auth/sign-up"
-                  className="text-primary hover:underline font-medium"
-                >
-                  Criar conta
-                </Link>
+            <div className="mt-6 text-center text-sm text-muted-foreground">
+              Nao tem uma conta?{' '}
+              <Link href="/auth/cadastro" className="text-primary hover:underline font-medium">
+                Cadastre-se
+              </Link>
+            </div>
+
+            <div className="mt-6 pt-6 border-t border-border/50">
+              <p className="text-xs text-center text-muted-foreground">
+                Protegido por criptografia AES-256 e em conformidade com LGPD
               </p>
             </div>
           </CardContent>
         </Card>
-
-        {/* Info Boxes */}
-        <div className="grid grid-cols-3 gap-3 text-center text-xs">
-          <div className="p-3 rounded-lg bg-card/50 border border-border">
-            <div className="text-primary font-bold">👨‍⚕️</div>
-            <p className="text-muted-foreground mt-1">Médicos</p>
-          </div>
-          <div className="p-3 rounded-lg bg-card/50 border border-border">
-            <div className="text-primary font-bold">👤</div>
-            <p className="text-muted-foreground mt-1">Pacientes</p>
-          </div>
-          <div className="p-3 rounded-lg bg-card/50 border border-border">
-            <div className="text-primary font-bold">🌱</div>
-            <p className="text-muted-foreground mt-1">Cultivadores</p>
-          </div>
-        </div>
       </div>
     </div>
   )

@@ -1,231 +1,163 @@
 # CannTrace Care 🌿
 
-## A Espinha Dorsal Tecnológica da Cannabis Medicinal no Brasil
+A espinha dorsal tecnológica da Cannabis Medicinal no Brasil.
 
-CannTrace Care resolve o maior gargalo do setor: **a confiança**. Através de um sistema **Seed-to-Patient**, garantimos que o médico tenha segurança ao prescrever e o paciente tenha a certeza da pureza do que consome.
+## Visão Geral
 
----
+O **CannTrace Care** resolve o maior gargalo do setor: a confiança. Através de um sistema **Seed-to-Patient**, garantimos que o médico tenha segurança ao prescrever e o paciente tenha a certeza da pureza do que consome.
 
-## 🎯 Problema & Solução
+### Funcionalidades Principais
 
-### O Problema
-- Falta de rastreabilidade total do cultivo ao paciente
-- Riscos de adulteração de laudos laboratoriais
-- Ausência de prontuários eletrônicos para telemedicina
-- Não conformidade com regulamentações ANVISA (RDC 660/22 e RDC 327/19)
-- Dados clínicos vulneráveis à violação da LGPD
+- **Rastreabilidade Completa**: Cada lote gera um hash SHA-256 de integridade. Se o laudo laboratorial for alterado, o hash quebra, garantindo imutabilidade.
+- **Telemedicina Integrada**: Sala de consulta com prontuário eletrônico e gerador automático de receita PDF
+- **Compliance ANVISA**: Validação de receitas (6 meses), gerenciamento de documentação (RDC 660/327)
+- **Real World Evidence (RWE)**: Análise de eficácia por strain (ex: 10% CBD) com melhora de sintomas relatada pelo paciente
+- **IoT Monitoramento**: Sensores de temperatura, umidade, luz e CO2 para cultivo controlado
+- **LGPD Compliant**: Criptografia AES-256 e Row Level Security em todas as tabelas
 
-### Nossa Solução
-Uma plataforma integrada que une **rastreabilidade imutável**, **telemedicina segura** e **IoT monitorado**, tudo em compliance 100% com regulações brasileiras.
-
----
-
-## ✨ Recursos Principais
-
-### 1. **Motor de Rastreabilidade Seed-to-Patient**
-- Cada lote gera um **hash SHA-256** (DNA Digital)
-- Se o laudo laboratorial for alterado, o hash quebra imediatamente
-- Timeline imutável: Semente → Cultivo → Colheita → Extração → Paciente
-- Geração automática de **QR codes** para rastreamento
+## Stack Tecnológico
 
 ```
-LOT-2024-001 → Hash: 3a2f8d9c... ✓ Íntegro
+Frontend:     Next.js 16 (App Router) + TypeScript + Tailwind CSS
+Backend:      Supabase (PostgreSQL) + Edge Functions
+Autenticação: Supabase Auth com RBAC (4 níveis)
+Segurança:    SHA-256 (integridade), AES-256 (dados sensíveis), Row Level Security
+Deploy:       Vercel
 ```
 
-### 2. **Módulo de Telemedicina HIPAA-Compliant**
-- Sala de vídeo integrada em **WebRTC**
-- Prontuário eletrônico com histórico de sintomas
-- Gerador de receita PDF **assinado digitalmente** (ICP-Brasil)
-- Validação automática de **lote disponível** antes de prescrever
+## Arquitetura RBAC (4 Níveis)
 
-### 3. **Compliance ANVISA (RDC 660/327)**
-- Validador de **validade de receitas** (6 meses)
-- Repositório de documentos:
-  - Autorização de Importação
-  - Termo de Responsabilidade
-  - Laudos Médicos
-  - Receitas Assinadas
-- **Auditoria completa** de todas as ações
+### 1. MÉDICO
+- Emissão de receitas com validação de cepa disponível
+- Acesso a prontuários eletrônicos do paciente
+- Histórico de prescrições e acompanhamento
+- Telemedicina com salas de vídeo integradas
 
-### 4. **Real World Evidence (RWE)**
-- Cruze cepa utilizada (ex: 10% CBD) com **melhora de sintomas** relatada pelo paciente
-- Gráficos de aderência e eficácia
-- Dados para pesquisa clínica em compliance
+### 2. PACIENTE
+- Carteira de autorizações ANVISA
+- Histórico de receitas e medicamentos consumidos
+- Diário de sintomas com escala de intensidade
+- Rastreamento de lotes consumidos (Seed-to-Patient)
 
-### 5. **IoT Dashboard - Monitoramento de Estufa**
-- Temperatura, Umidade, CO2, LUZ, pH, EC em tempo real
-- Alertas automáticos quando parâmetros saem do ideal
-- Histórico de leituras para análise de cultivo
+### 3. CULTIVADOR
+- Registro e monitoramento de lotes
+- Geração automática de QR Code por lote
+- Sensores IoT (temperatura, umidade, luz, CO2)
+- Timeline de cultivo (semente → colheita → extração)
 
-### 6. **RBAC Completo (4 Roles)**
-| Papel | Funcionalidades |
-|-------|-----------------|
-| **Médico** | Emissão de receitas, Telemedicina, Prontuários, ICP-Brasil |
-| **Paciente** | Carteira de receitas, Diário de sintomas, Consultas |
-| **Cultivador** | Registro de lotes, Sensores IoT, Etiquetas QR, Timeline |
-| **Suporte** | Logs de auditoria, Gestão de usuários, Compliance |
+### 4. SUPORTE
+- Logs de auditoria com rastreamento completo
+- Gestão de usuários e permissões
+- Validação de documentos ANVISA
+- **Sem acesso a dados clínicos** (isolamento de dados sensíveis)
 
----
+## Estrutura do Banco de Dados
 
-## 🏗️ Tech Stack
+```sql
+-- Tabelas Principais
+profiles              -- Usuários com roles (médico, paciente, cultivador, suporte)
+lotes                 -- Lotes com hash_integridade SHA-256
+lote_historico        -- Timeline de cada lote (cultivo → colheita → extração → dispensado)
+prescricoes           -- Vínculo médico-paciente com lote e PDF
+documentos_anvisa     -- RDC 660/327, Termo de Responsabilidade, etc.
+diario_sintomas       -- Registro paciente com intensidade e melhora
+sensores_iot          -- Dados de temperatura, umidade, luz, CO2
+consultas             -- Histórico de telemedicina
+audit_logs            -- Rastreamento completo de ações (compliance)
+```
 
-### Frontend
-- **Framework**: Next.js 16+ (App Router)
-- **UI**: Tailwind CSS v4 + shadcn/ui
-- **Autenticação**: Supabase Auth (Email/Password)
-- **Estado**: SWR para sincronização de dados
+## Conformidade Regulatória
 
-### Backend & Database
-- **Database**: Supabase (PostgreSQL)
-- **Row Level Security (RLS)**: Proteção de dados por usuário
-- **Autenticação**: Supabase Auth nativo
-- **Storage**: Supabase Storage para documentos
+✅ **RDC 660/2022** - Regulamentação de Cannabis Medicinal
+✅ **RDC 327/2019** - Procedimentos para importação
+✅ **LGPD** - Lei Geral de Proteção de Dados (AES-256 + RLS)
+✅ **ICP-Brasil** - Receitas digitais com validação de assinatura
 
-### Segurança & Compliance
-- **Criptografia**: AES-256 para dados sensíveis
-- **Hashing**: SHA-256 para integridade de lotes
-- **LGPD**: Conformidade total com Lei de Proteção de Dados
-- **Assinatura Digital**: ICP-Brasil para receitas
-- **HIPAA**: Telemedicina segura com encryption
+## Como Rodar Localmente
 
-### Infraestrutura
-- **Hospedagem**: Vercel (Next.js + Edge Functions)
-- **CI/CD**: GitHub Actions
-- **Containerização**: Docker (opcional)
-
----
-
-## 📊 Argumentos Para Investidor
-
-### 1. **Transparência Total** 
-> "Nosso sistema prova para a ANVISA a procedência de cada miligrama de óleo."
-- Hash immutável de cada lote
-- Timeline verificável seed-to-patient
-- Impossível falsificar laudos sem quebrar a integridade
-
-### 2. **Proteção de Dados**
-> "Criptografia de nível bancário para prontuários, atendendo 100% da LGPD."
-- AES-256 para dados sensíveis
-- Row Level Security em todas as tabelas
-- Auditoria completa de acessos
-- Conformidade com lei de proteção de dados
-
-### 3. **Escalabilidade**
-> "Infraestrutura em microserviços pronta para atender desde associações locais até indústrias globais."
-- Supabase serverless
-- Edge Functions para processamento rápido
-- Escalável de 10 para 10M transações/dia
-- Pronto para integração com APIs de laboratoriais
-
----
-
-## 🚀 Como Começar
-
-### Instalação
 ```bash
-# Clone o repositório
-git clone https://github.com/seu-usuario/canntrace-care.git
+# 1. Clone o repositório
+git clone <repo-url>
 cd canntrace-care
 
-# Instale as dependências
-npm install
+# 2. Instale as dependências
+pnpm install
 
-# Crie um arquivo .env.local com suas variáveis
-NEXT_PUBLIC_SUPABASE_URL=seu_supabase_url
-NEXT_PUBLIC_SUPABASE_ANON_KEY=sua_chave_anonima
+# 3. Configure as variáveis de ambiente
+# Crie um arquivo .env.local com:
+NEXT_PUBLIC_SUPABASE_URL=seu_url_supabase
+NEXT_PUBLIC_SUPABASE_ANON_KEY=sua_chave_anon
 
-# Rode o servidor de desenvolvimento
-npm run dev
+# 4. Rode o servidor de desenvolvimento
+pnpm dev
+
+# 5. Acesse http://localhost:3000
 ```
 
-### Acessar
-- **URL**: http://localhost:3000
-- **Login Demo**: 
-  - Email: `medico@example.com`
-  - Senha: `senha123`
+## Deploy para Vercel
 
----
+```bash
+# 1. Push para GitHub
+git add .
+git commit -m "Initial CannTrace Care deployment"
+git push origin main
 
-## 📋 Estrutura de Banco de Dados
+# 2. Conecte no Vercel Dashboard
+# - Importe o repositório
+# - Configure as variáveis de ambiente Supabase
+# - Deploy automático em push
 
-### Tabelas Principais
-- `profiles` - Usuários com RBAC (Médico, Paciente, Cultivador, Suporte)
-- `lotes` - Lotes de cannabis com hash de integridade
-- `lote_timeline` - Timeline imutável de cada lote
-- `prescricoes` - Receitas médicas assinadas
-- `diario_sintomas` - Real World Evidence dos pacientes
-- `documentos_anvisa` - Repositório de compliance
-- `sensores_iot` - Sensores de estufa
-- `leituras_sensores` - Dados em tempo real
-- `consultas` - Telemedicina agendada
-- `audit_logs` - Log completo de auditoria
-
----
-
-## 🔐 Segurança
-
-### Criptografia de Lote
-```typescript
-// Gera DNA Digital imutável
-const hash = generateBatchSeal({
-  codigo_qr: 'QR-2024-001',
-  strain: 'CBD 15%',
-  status: 'CULTIVO',
-  data_plantio: '2024-02-15',
-})
-// Hash: 3a2f8d9c7b1e4f5a8c9d2e1f...
+# OU use Vercel CLI:
+npm install -g vercel
+vercel
 ```
 
-### Row Level Security Exemplo
-```sql
-CREATE POLICY "Pacientes veem só suas receitas"
-  ON prescricoes FOR SELECT
-  USING (auth.uid() = paciente_id);
-```
+## Rotas Principais
+
+| Rota | Descrição | Acesso |
+|------|-----------|--------|
+| `/` | Landing Page | Público |
+| `/auth/login` | Login | Público |
+| `/auth/cadastro` | Registro | Público |
+| `/dashboard` | Dashboard Principal | Autenticado |
+| `/dashboard/lotes` | Gestão de Lotes | Cultivador |
+| `/dashboard/lotes/novo` | Criar novo lote | Cultivador |
+| `/dashboard/lotes/[id]` | Detalhes do lote | Cultivador |
+| `/dashboard/prescricoes` | Minhas receitas | Paciente/Médico |
+| `/dashboard/prescricoes/nova` | Emitir receita | Médico |
+| `/dashboard/diario` | Diário de sintomas | Paciente |
+| `/dashboard/diario/novo` | Novo registro | Paciente |
+| `/dashboard/analytics` | Real World Evidence | Todos |
+| `/dashboard/sensores` | Monitoramento IoT | Cultivador |
+| `/dashboard/documentos` | Documentos ANVISA | Todos |
+
+## Segurança
+
+### Proteção de Dados
+- **AES-256**: Criptografia de dados sensíveis (prontuários, dosagens)
+- **SHA-256**: Hash de integridade para cada lote (imutável)
+- **Row Level Security**: Cada usuário só acessa seus próprios dados
+
+### Auditoria
+- Log completo de todas as operações críticas
+- Rastreamento de alterações em lotes e receitas
+- Verificação de integridade com triggers automáticos
+
+## Roadmap Futuro
+
+- [ ] Integração com APIs de laboratórios (análise de canabinoides)
+- [ ] Blockchain para registro imutável de lotes
+- [ ] Mobile App (React Native)
+- [ ] Integração com sistema de farmácias (dispensação)
+- [ ] Machine Learning para previsão de eficácia por perfil genético
+- [ ] Dashboard Público de Estatísticas (RWE agregado)
+
+## Suporte
+
+Para questões técnicas ou bugs, abra uma issue no repositório.
+
+Para suporte comercial: hello@canntrace.care
 
 ---
 
-## 📈 Métricas de Sucesso
-
-- ✅ **0% de adulteração**: Hashes SHA-256 detectam qualquer alteração
-- ✅ **100% LGPD**: Criptografia AES-256 em dados pessoais
-- ✅ **6 meses de validade**: Receitas expiram automaticamente
-- ✅ **RWE Completo**: 89% média de aderência dos pacientes
-- ✅ **Escalabilidade**: Pronto para 1M+ usuários
-
----
-
-## 🤝 Integração Futura
-
-- **Laboratoriais**: APIs para importação de laudos assinados
-- **ANVISA**: Webhooks para sincronização de autorizações
-- **Seguradoras**: Integração com sistemas de reembolso
-- **Pesquisa**: Exportação anonimizada de dados para estudos clínicos
-
----
-
-## 📞 Suporte & Documentação
-
-- **Docs**: [Documentação Completa](#)
-- **Support**: support@canntrace-care.com
-- **Status**: https://status.canntrace-care.com
-
----
-
-## 📄 Licença
-
-Propriedade privada - CannTrace Care 2024
-
----
-
-## 🌍 Conformidade Regulatória
-
-✅ **RDC 660/22** - Regulamentação de cannabis medicinal  
-✅ **RDC 327/19** - Autorização de importação  
-✅ **LGPD** - Lei Geral de Proteção de Dados  
-✅ **HIPAA** - Telemedicina segura  
-✅ **ICP-Brasil** - Assinatura digital de receitas  
-
----
-
-**CannTrace Care - Transformando a confiança em Cannabis Medicinal** 🌿
+**CannTrace Care** - Transparência Total na Cannabis Medicinal 🌿
