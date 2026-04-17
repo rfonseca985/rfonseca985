@@ -1,141 +1,89 @@
-// 👋 Olá! Bem-vindo ao meu perfil.
+/**
+ * @file RafaelFonseca.ts
+ * @description Perfil profissional de um Desenvolvedor e Analista de Sistemas
+ * @author Rafael Fonseca <rfonseca985@gmail.com>
+ */
 
-const rafaelFonseca: Developer = {
+interface Experiencia {
+  empresa: string;
+  cargo: string;
+  periodo: string;
+  tecnologias: string[];
+  descricao: string;
+}
 
-  // ℹ️ Sobre Mim
-  nome: "Rafael Fonseca",
-  localização: "Pouso Alegre, MG 🇧🇷",
-  contato: {
-    email: "rfonseca985@gmail.com",
-    telefone: "(35) 98429-6585",
-  },
+interface Formacao {
+  titulo: string;
+  instituicao: string;
+  nivel: 'Tecnólogo' | 'Pós-graduação' | 'Especialização';
+}
 
-  resumo: `
-    Desenvolvedor e Analista de Sistemas com visão full-stack.
-    Transformo problemas complexos em soluções lógicas e escaláveis.
-    Minha experiência vai do chão de fábrica ao código limpo,
-    o que me dá uma perspectiva única para resolver desafios reais.
-  `,
+type Habilidades = {
+  backend: string[];
+  frontend: string[];
+  bancoDeDados: string[];
+  ferramentas: string[];
+  softSkills: string[];
+};
 
-  // 🎓 Formação Acadêmica
-  formacao: [
+class RafaelFonseca {
+  public readonly nome: string = "Rafael Fonseca";
+  public readonly local: string = "Pouso Alegre, MG";
+  public readonly contato: string = "(35) 98429-6585";
+  
+  public resumo: string = `
+    Analista de Sistemas com transição sólida para o desenvolvimento backend.
+    Unindo a precisão da operação industrial com a lógica de programação para
+    criar soluções escaláveis, seguras e orientadas ao negócio.
+  `;
+
+  public formacao: Formacao[] = [
     {
-      curso: "Pós-Graduação em Desenvolvimento de Sistemas",
-      foco: "Java",
+      titulo: "Desenvolvimento de Sistemas com foco em Java",
       instituicao: "Faculdade Unyleya",
-      status: "✅ Concluído",
+      nivel: "Pós-graduação"
     },
     {
-      curso: "Tecnólogo em Análise e Desenvolvimento de Sistemas",
+      titulo: "Análise e Desenvolvimento de Sistemas (ADS)",
       instituicao: "UNOPAR",
-      status: "✅ Concluído",
-    },
-  ],
+      nivel: "Tecnólogo"
+    }
+  ];
 
-  // 🛠️ Stack Técnica
-  stack: {
-    linguagens: ["Java", "SQL", "JavaScript", "C# (em evolução)"],
-    backend: ["Spring Boot", "APIs REST", "JPA / Hibernate"],
-    bancosDeDados: ["PostgreSQL", "MySQL", "Oracle"],
-    ferramentas: ["Git", "GitHub", "VS Code", "IntelliJ IDEA"],
-    conceitos: [
-      "Arquitetura REST",
-      "Modelagem de Dados",
-      "Testes de Software",
-      "Análise de Processos",
-      "Manutenção de Hardware",
-      "Suporte Técnico",
-    ],
-  },
+  public stack: Habilidades = {
+    backend: ["Java (Spring Boot)", "C# / .NET (Estudando)", "Node.js (Em evolução)"],
+    frontend: ["JavaScript", "TypeScript", "HTML5/CSS3"],
+    bancoDeDados: ["SQL Server", "Oracle", "PostgreSQL", "MySQL"],
+    ferramentas: ["Git", "GitHub", "Docker", "APIs REST", "Testes Unitários"],
+    softSkills: ["Análise Crítica", "Resolução de Problemas", "Trabalho em Equipe"]
+  };
 
-  // 💼 Trajetória Profissional
-  experiencia: [
+  public trajetoria: Experiencia[] = [
     {
       empresa: "Cimed",
-      cargo: "Operador de Máquinas | Automação Industrial",
-      periodo: "Jul/2025 - Atual",
-      destaques: [
-        "Operação de sistemas automatizados via IHM",
-        "Monitoramento lógico de indicadores de produção",
-        "Manutenção autônoma e controle de processos",
-      ],
+      cargo: "Operador de Máquinas / Automação",
+      periodo: "2025 - Presente",
+      tecnologias: ["IHM", "Sistemas de Automação", "Controle de Qualidade"],
+      descricao: "Operação de alta precisão e monitoramento lógico de processos industriais."
     },
     {
       empresa: "RF Soluções em Sistemas",
-      cargo: "Analista de Sistemas / Desenvolvedor",
-      periodo: "Mar/2021 - Abr/2025",
-      destaques: [
-        "Desenvolvimento de APIs REST com Java + Spring Boot",
-        "Gestão e modelagem de bancos de dados relacionais",
-        "Suporte técnico em hardware, software e redes",
-        "Automação de processos internos",
-      ],
+      cargo: "Analista de Sistemas / Developer",
+      periodo: "2021 - 2025",
+      tecnologias: ["Java", "Spring Boot", "SQL", "Git"],
+      descricao: "Desenvolvimento de APIs REST e gestão de bancos de dados relacionais."
     },
     {
       empresa: "Fotosensores Tecnologia",
       cargo: "Operador de Micro / Analista de Dados",
-      periodo: "Out/2019 - Jun/2020",
-      destaques: [
-        "Análise crítica de dados e validação sistêmica",
-        "Geração de relatórios de performance",
-      ],
-    },
-    {
-      empresa: "Qualivale",
-      cargo: "Auxiliar de Controle de Qualidade",
-      periodo: "Jan/2019 - Set/2019",
-      destaques: [
-        "Inspeção técnica no setor automobilístico",
-        "Foco em conformidade e redução de retrabalho",
-      ],
-    },
-  ],
+      periodo: "2019 - 2020",
+      tecnologias: ["Análise de Dados", "Relatórios de Performance"],
+      descricao: "Validação sistêmica e análise crítica de registros de performance."
+    }
+  ];
 
-  // 🚀 Projetos em Destaque
-  projetos: [
-    {
-      nome: "API REST com Spring Boot",
-      descricao: "CRUD completo com endpoints RESTful",
-      tecnologias: ["Java", "Spring Boot", "PostgreSQL", "Git"],
-    },
-    {
-      nome: "Sistema de Gestão de Dados",
-      descricao: "Consultas SQL avançadas para relatórios operacionais",
-      tecnologias: ["SQL", "Oracle", "MySQL"],
-    },
-  ],
+  public getObjetivo(): string {
+    return "Evoluir tecnicamente em ambientes colaborativos como Dev Java/C# ou Analista de TI.";
+  }
 
-  // 📊 O que estou estudando agora
-  aprendendo: [
-    "JavaScript avançado",
-    "Fundamentos de .NET / C#",
-    "Docker & Containers",
-    "Testes automatizados",
-  ],
-
-  // 🎯 Objetivo
-  objetivo: `
-    Evoluir como desenvolvedor em ambientes colaborativos,
-    contribuindo com soluções escaláveis e orientadas ao negócio.
-    Aberto a oportunidades em Desenvolvimento Backend,
-    Suporte de TI e Análise de Sistemas.
-  `,
-
-  // ⚡ Fun Fact
-  funFact: "Codifico com a mesma precisão que opero máquinas industriais. 🏭💻",
-};
-
-
-// 📫 Vamos conversar?
-function entrarEmContato(dev: Developer): string {
-  return `
-    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-    📧 ${dev.contato.email}
-    📱 ${dev.contato.telefone}
-    📍 ${dev.localização}
-    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-    "Código bom é código que resolve problemas reais."
-  `;
-}
-
-console.log(entrarEmContato(rafaelFonseca));
+  public 
